@@ -17,3 +17,8 @@ resource "github_membership" "gm_c" {
   username = "ci7lus"
   role = "admin"
 }
+
+resource "github_membership" "gm_p" {
+  username = "p-chan"
+  role = "admin"
+}

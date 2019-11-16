@@ -8,7 +8,8 @@ resource "github_membership" "otofune" {
 }
 
 resource "github_team" "developers" {
-  name        = "developers"
+  name = "developers"
+  privacy = "closed"
 }
 resource "github_team_repository" "dev_mozuku" {
   team_id    = "${github_team.developers.id}"
